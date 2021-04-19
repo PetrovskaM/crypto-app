@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crypto-Coin-App</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="cripto.css" type="text/css">
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand"> <img src="https://pbs.twimg.com/profile_images/1348189551051776001/ipMe_Zya.jpg"
+                    class="img-small m-2">MartinaStats</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <div class=" text-center pt-5">
+                <h1 class="opacity">Crypto Coin Compare</h1>
+                <p class="opacity fw-bolder"> At MartinaStats, we strive to find the best places to store, trade and
+                    mine cryptocurrency. Our
+                    featured lists can help you easily navigate the crypto world. </p>
+                <a  href="#table" class="btn btn-primary mb-5 ">See more</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Latest crypto news -->
+    <main id="latest-crypto-news">
+        <div class="container">
+            <div class="row  pt-5">
+                <h1 class="text-center pb-4">Latest Crypto News</h1>
+                <div class="col-md-4">
+                    <div class="card ">
+                        <div class="card-body-0">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body-1">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body-2">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row pt-5">
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body-3">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body-4">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body-5">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Table -->
+    <section id="table" class="m-5">
+        <div class="container">
+            <nav class="navbar table-header">
+                <div class="container-fluid px-5 py-2">
+                    <a class="navbar-brand text-white">Best <strong>Coins</strong></a>
+                    <form class="d-flex">
+                        <div class="form-check radio-button1">
+                            <input class="form-check-input" type="radio" name="radio-button" id="radio-button-1" checked>
+                            <label class="form-check-label  text-white" for="radio-button-1">
+                                Top 10
+                            </label>
+                        </div>
+                        <div class="form-check radio-button2">
+                            <input class="form-check-input " type="radio" name="radio-button" id="radio-button-2">
+                            <label class="form-check-label text-white" for="radio-button-2">
+                                Top 5
+                            </label>
+                        </div>
+                        <div class="form-check radio-button3">
+                            <input class="form-check-input" type="radio" name="radio-button" id="radio-button-3">
+                            <label class="form-check-label" for="redaio-button-3">
+                                Top 3
+                        </div>
+                    </form>
+                </div>
+            </nav>
+            <div class="m-5">
+                <table class=" table table-striped">
+                    <thead class="thead border-top border-bottom p-5">
+                        <tr>
+                            <th class="p-3">#</th>
+                            <th class="p-3">Coin</th>
+                            <th class="p-3">Price</th>
+                            <th class="p-3">Last Update</th>
+                            <th class="p-3">Highest (24H)</th>
+                            <th class="p-3">Lowest (24H)</th>
+                            <th class="p-3">Market Cap</th>
+                            <th class="p-3">Details</th>
+                        </tr>
+                    </thead>
+                    <tbody class="table-body ">
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+         <!--modal dialog -->
+         <div class="modal fade" id="modal" aria-hidden="true" aria-labelledby="..." tabindex="-1">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Coins Details</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-3 image-details">
+                            </div>
+                            <div class="col-md-9 coin-details">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous">
+    </script>
+    <script src="crypto.js"></script>
+</body>
+
+</html>
